@@ -1,0 +1,100 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:background="@drawable/green"
+    android:layout_centerVertical="true"
+    android:padding="10dp"
+    android:layout_centerHorizontal="true"
+    android:orientation="vertical">
+
+
+    <TextView
+        android:id="@+id/greeting"
+        android:layout_gravity="center"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:text="Welcome"
+        android:textColor="#163669"
+        android:textSize="24sp"
+        android:textStyle="bold"
+        android:padding="10dp"
+        android:layout_marginTop="45dp"
+        />
+
+    <TextView
+        android:layout_gravity="center"
+        android:id="@+id/textView"
+        android:layout_width="wrap_content"
+        android:padding="10dp"
+        android:layout_height="wrap_content"
+        android:text="Take New Attendance"
+        android:textColor="@color/black"
+        android:textSize="22sp"
+        android:textStyle="bold"
+        android:layout_marginTop="50dp"
+         />
+
+    <EditText
+        android:id="@+id/attendance_Title"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginRight="32dp"
+        android:background="@color/teal_700"
+        android:ems="10"
+        android:padding="10dp"
+        android:hint="Title "
+        android:layout_marginTop="50dp"
+        android:inputType="textPersonName"
+        android:paddingLeft="10dp"
+        android:textStyle="italic"
+         />
+
+    <EditText
+        android:id="@+id/number_Of_Students"
+        android:layout_width="match_parent"
+        android:layout_height="40dp"
+        android:layout_marginStart="32dp"
+        android:layout_gravity="center"
+        android:layout_marginLeft="32dp"
+        android:layout_marginEnd="32dp"
+        android:layout_marginTop="25dp"
+        android:layout_marginRight="32dp"
+        android:padding="10dp"
+        android:background="@color/teal_700"
+        android:ems="10"
+        android:hint="Number Of Students (Max = 200)"
+        android:inputType="number"
+        android:paddingLeft="10dp"
+        android:textStyle="italic"
+         />
+
+    <com.airbnb.lottie.LottieAnimationView
+        android:id="@+id/create_animated_Button"
+        android:layout_width="40dp"
+        android:layout_height="40dp"
+        android:onClick="callAttendance"
+        android:layout_gravity="center"
+        app:lottie_autoPlay="true"
+        android:scaleX="1.5"
+        android:scaleY="1.5"
+        android:layout_marginTop="70dp"
+        app:lottie_rawRes="@raw/create" />
+    <TextView
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_gravity="center"
+        android:text="Create"
+        android:textColor="@color/black"
+        android:onClick="callAttendance"
+        android:textStyle="bold"
+        />
+
+
+</LinearLayout>

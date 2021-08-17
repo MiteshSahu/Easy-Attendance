@@ -1,0 +1,18 @@
+<?xml version="1.0" encoding="utf-8"?>
+<FrameLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:layout_width="340dp"
+    android:layout_height="380dp"
+    android:layout_gravity="center"
+    xmlns:tools="http://schemas.android.com/tools">
+<TextView
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:text = "Roll No."
+    android:id="@+id/data"
+    android:gravity="center"
+    android:textSize="70sp"
+    android:textColor="@color/white"
+    android:background="#062061"
+    />
+
+</FrameLayout>

@@ -1,0 +1,5 @@
+<resources>
+    <string name="app_name">Easy_Attendance</string>
+    <string name="tab_text_1">New</string>
+    <string name="tab_text_2">History</string>
+</resources>
